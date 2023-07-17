@@ -1,0 +1,36 @@
+// import variables
+// -- [colors]
+@import "./sass/variables/colors";
+// -- [transition]
+@import "./sass/variables/transitions";
+
+// import mixins
+@import "./sass/helpers/mixins";
+
+// import global rules
+@import "./sass/components/global-rules";
+
+// import components
+@import "./sass/components/buttons";
+
+// import functions
+@import "./sass/helpers/functions";
+
+// import mixins
+@import "./sass/helpers/mixins";
+
+// import layouts
+// -- [logo]
+@import "./sass/layout/logo";
+
+// -- [header]
+@import "./sass/layout/header";
+
+// -- [sidbar]
+@import "./sass/layout/sidbar";
+
+// -- [settings]
+@import "./sass/layout/settings";
+
+// -- [footer]
+@import "./sass/layout/footer";

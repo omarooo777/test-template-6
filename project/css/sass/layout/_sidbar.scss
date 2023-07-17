@@ -1,0 +1,97 @@
+.page {
+  .sidbar {
+    height: 100vh;
+    background-color: $darkThemeSidbarBg;
+    width: 250px;
+    transition: $mainTransitionDuration;
+    border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
+    color: #fff;
+    &.close-sidbar {
+      left: -250px;
+    }
+    .list {
+      overflow-y: scroll;
+      height: calc(100vh - 70px);
+      padding: 15px 10px;
+      > span {
+        opacity: 0.5;
+        font-size: 13px;
+      }
+      .main-link {
+        margin-top: 5px;
+        > li {
+          margin: 5px 0;
+          .link {
+            cursor: pointer;
+            transition: $mainTransitionDuration;
+            &:hover,
+            &.active {
+              background-color: $darkThemeHeaderBg;
+            }
+            border-radius: 6px;
+            padding: 5px;
+            .link-icon {
+              font-size: 14px;
+            }
+            > span {
+              flex: 1;
+            }
+            .toggle-submenu {
+              transition: $mainTransitionDuration;
+              font-weight: bold;
+              &.rotate {
+                transform: rotate(90deg);
+              }
+            }
+          }
+          .submenu {
+            transition: $mainTransitionDuration;
+            &.close-submenu {
+              height: 0 !important;
+            }
+            li a {
+              color: rgba($color: #fff, $alpha: 0.7);
+              transition: $mainTransitionDuration;
+              position: relative;
+              display: block;
+              width: 100%;
+              margin: 5px 0 5px 7px;
+              padding-left: 25px;
+              font-size: 14px;
+              &:hover {
+                color: #fff;
+                margin: 5px 15px;
+                &::before {
+                  background-color: #fff;
+                }
+                &::after {
+                  border-color: #fff;
+                }
+              }
+              &::before,
+              &::after {
+                content: "";
+                position: absolute;
+                transition: $mainTransitionDuration;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+              &::before {
+                left: 0;
+                width: 18px;
+                height: 1px;
+                background-color: rgba($color: #fff, $alpha: 0.7);
+              }
+              &::after {
+                @include circle(6px);
+                background-color: $darkThemeSidbarBg;
+                border: 1px solid rgba($color: #fff, $alpha: 0.7);
+                left: calc((18px - 6px) / 2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

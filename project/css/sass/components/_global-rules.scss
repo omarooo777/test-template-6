@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $darkThemeHeaderBg;
+  border-radius: 10px;
+}
+
+.page {
+  .content-area {
+    background-color: $darkThemeBg;
+    color: #fff;
+    position: absolute;
+    left: 250px;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    will-change: width;
+    transition: $mainTransitionDuration;
+    &.full-screen {
+      width: 100%;
+      left: 0;
+    }
+  }
+}

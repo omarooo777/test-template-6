@@ -1,0 +1,49 @@
+header {
+  background-color: $darkThemeHeaderBg;
+  height: 70px;
+  .sidbar-switch {
+    cursor: pointer;
+    color: #fff;
+  }
+  .search-box {
+    .search-icon {
+      left: 8px;
+      top: 50%;
+      font-size: 14px;
+      transform: translateY(-50%);
+      color: #6f7272;
+    }
+    input[type="search"] {
+      padding: 8px;
+      border-radius: 6px;
+      padding-left: 30px;
+      border: none;
+      background-color: $darkThemeSidbarBg;
+      color: #f6f6f6;
+      &::placeholder {
+        transition: $mainTransitionDuration;
+      }
+      &:focus::placeholder {
+        opacity: 0;
+      }
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #fff;
+        background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+          no-repeat 50% 50%;
+        background-size: contain;
+        opacity: 0;
+        pointer-events: none;
+        background-color: #fff;
+      }
+      &:focus::-webkit-search-cancel-button {
+        opacity: 0.3;
+        pointer-events: all;
+      }
+    }
+  }
+}

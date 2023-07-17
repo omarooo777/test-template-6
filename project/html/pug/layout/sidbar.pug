@@ -1,2 +1,157 @@
-.sidbar 
-  h1 SidBars
+.sidbar(class="position-fixed top-0 start-0")
+  include logo
+  .list 
+    span(class="text-uppercase") Menu
+    ul.main-link 
+      li.has-submenu
+        .link(class="d-flex align-items-center flex-wrap gap-1")
+          i.icon-oi-rounded-dashboard-1
+          span Dashboards
+          i.icon-oi-soft-alt_arrow_right.toggle-submenu
+        ul.submenu.close-submenu(class="overflow-hidden")
+          li: a(href="#") CRM
+          li: a(href="#") Ecommerce
+          li: a(href="#") NFT
+          li: a(href="#") Jobs
+          li: a(href="#") Sales
+          li: a(href="#") Crypto
+          li: a(href="#") Analytics
+          li: a(href="#") Projects
+          li: a(href="#") HRM
+          li: a(href="#") Personal
+          li: a(href="#") Stocks
+          li: a(href="#") Learning
+    //-   li.has-submenu
+    //-     .link(class="d-flex align-items-center flex-wrap gap-1")
+    //-       i.icon-layout-svgrepo-com
+    //-       span Layouts
+    //-       i.icon-oi-soft-alt_arrow_right.toggle-submenu
+    //-     ul.submenu.close-submenu(class="overflow-hidden")
+    //-       li: a(href="#") Horizontal
+    //-       li: a(href="#") Two Columns
+    //-       li: a(href="#") Detached
+    //-       li: a(href="#") Hovered
+    //- span(class="text-uppercase") Apps
+    //- ul.main-link 
+    //-   li 
+    //-     a(href="#").link(class="text-light d-flex align-items-center flex-wrap")
+    //-       i.icon-regular-dashboard
+    //-       span Chat
+    //-   li 
+    //-     a(href="#").link(class="text-light d-flex align-items-center flex-wrap")
+    //-       i.icon-regular-dashboard
+    //-       span Email
+    //-   li 
+    //-     a(href="#").link(class="text-light d-flex align-items-center flex-wrap")
+    //-       i.icon-regular-dashboard
+    //-       span Calender
+    //-   li 
+    //-     a(href="#").link(class="text-light d-flex align-items-center flex-wrap")
+    //-       i.icon-regular-dashboard
+    //-       span Gallery
+    //-   li 
+    //-     a(href="#").link(class="text-light d-flex align-items-center flex-wrap")
+    //-       i.icon-folder-2-svgrepo-com
+    //-       span File Manager
+    //-   li.has-submenu
+    //-     .link(class="d-flex align-items-center flex-wrap gap-1")
+    //-       i.icon-regular-storeecommerce
+    //-       span Ecommerce
+    //-       i.icon-oi-soft-alt_arrow_right.toggle-submenu
+    //-     ul.submenu.close-submenu(class="overflow-hidden")
+    //-       li: a(href="#") Products
+    //-       li: a(href="#") Prodects Details
+    //-       li: a(href="#") Prodects Grid
+    //-       li: a(href="#") Create Product
+    //-       li: a(href="#") Orders
+    //-       li: a(href="#") Orders Overview
+    //-       li: a(href="#") Customers
+    //-       li: a(href="#") Shopping Cart
+    //-       li: a(href="#") Checkout
+    //-       li: a(href="#") Sallers
+    //-       li: a(href="#") Saller Overview
+    //-   li.has-submenu
+    //-     .link(class="d-flex align-items-center flex-wrap gap-1")
+    //-       i.icon-layout-svgrepo-com
+    //-       span Learning
+    //-       i.icon-oi-soft-alt_arrow_right.toggle-submenu
+    //-     ul.submenu.close-submenu(class="overflow-hidden")
+    //-       li: a(href="#") Students
+    //-       li: a(href="#") Courses
+    //-       li: a(href="#") Instructors
+    //-   li.has-submenu
+    //-     .link(class="d-flex align-items-center flex-wrap gap-1")
+    //-       i.icon-layout-svgrepo-com
+    //-       span Projects
+    //-       i.icon-oi-soft-alt_arrow_right.toggle-submenu
+    //-     ul.submenu.close-submenu(class="overflow-hidden")
+    //-       li: a(href="#") List
+    //-       li: a(href="#") Overview
+    //-       li: a(href="#") Create Project
+    //-   li.has-submenu
+    //-     .link(class="d-flex align-items-center flex-wrap gap-1")
+    //-       i.icon-layout-svgrepo-com
+    //-       span Tasks
+    //-       i.icon-oi-soft-alt_arrow_right.toggle-submenu
+    //-     ul.submenu.close-submenu(class="overflow-hidden")
+    //-       li: a(href="#") List View
+    //-       li: a(href="#") Task Details 
+    //- span(class="text-uppercase") Pages
+    //- ul.main-link 
+    //-   li.has-submenu
+    //-     .link(class="d-flex align-items-center flex-wrap gap-1")
+    //-       i.icon-layout-svgrepo-com
+    //-       span Authentication
+    //-       i.icon-oi-soft-alt_arrow_right.toggle-submenu
+    //-     ul.submenu.close-submenu(class="overflow-hidden")
+    //-       li: a(href="#") Sign In
+    //-       li: a(href="#") Sign Up
+    //-       li: a(href="#") Password Reset
+    //-       li: a(href="#") Password Create
+    //-       li: a(href="#") Lock Screen
+    //-       li: a(href="#") Logout
+    //-       li: a(href="#") Success Message
+    //-       li: a(href="#") Two Step Verification
+    //-       li: a(href="#") Under Maintenance
+    //-   li.has-submenu
+    //-     .link(class="d-flex align-items-center flex-wrap gap-1")
+    //-       i.icon-pages-svgrepo-com
+    //-       span Pages
+    //-       i.icon-oi-soft-alt_arrow_right.toggle-submenu
+    //-     ul.submenu.close-submenu(class="overflow-hidden")
+    //-       li: a(href="#") Starter
+    //-       li: a(href="#") About Us
+    //-       li: a(href="#") Contact Us
+    //-       li: a(href="#") File Manager
+    //-       li: a(href="#") Blog
+    //-       li: a(href="#") Chat
+    //-       li: a(href="#") Email
+    //-       li: a(href="#") Contacts
+    //-       li: a(href="#") Gallery
+    //-       li: a(href="#") FAQs
+    //-       li: a(href="#") To Do list
+    //-       li: a(href="#") Review
+    //-       li: a(href="#") Team
+    //-       li: a(href="#") Timeline
+    //-       li: a(href="#") Terms
+    //-       li: a(href="#") Invoice
+    //-       li: a(href="#") Comming Soon
+    //-       li: a(href="#") Privacy Policy
+    //-   li.has-submenu
+    //-     .link(class="d-flex align-items-center flex-wrap gap-1")
+    //-       i.icon-regular-rocketlanding
+    //-       span Landing
+    //-       i.icon-oi-soft-alt_arrow_right.toggle-submenu
+    //-     ul.submenu.close-submenu(class="overflow-hidden")
+    //-       li: a(href="#") One Page
+    //-       li: a(href="#") Job
+    //-       li: a(href="#") NFT Landing
+    //-   li.has-submenu
+    //-     .link(class="d-flex align-items-center flex-wrap gap-1")
+    //-       i.icon-regular-error
+    //-       span Error
+    //-       i.icon-oi-soft-alt_arrow_right.toggle-submenu
+    //-     ul.submenu.close-submenu(class="overflow-hidden")
+    //-       li: a(href="#") 401 - Error
+    //-       li: a(href="#") 404 - Error 
+    //-       li: a(href="#") 500 - Error 

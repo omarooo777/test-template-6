@@ -3,13 +3,14 @@ include pug/includes/variables
 doctype html
 html(lang="en")
   head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    include pug/includes/meta
     title #{pageTitle}
     include pug/includes/styles
   body 
     .page.home-page 
       include pug/layout/sidbar
-      //- .content Content
+      .content-area 
+        include pug/layout/header
+        h1 content
+        
     include pug/includes/scripts
